@@ -1,5 +1,5 @@
 class ProspectsController < ApplicationController
-    skip_before_action :authenticate_user!, only: [:new, :create]
+    skip_before_action :authenticate_user!, only: [:new, :create, :thanks]
 
   def new
     @prospect = Prospect.new
@@ -9,7 +9,7 @@ class ProspectsController < ApplicationController
     @prospect = Prospect.new(prospect_params)
     if @prospect.valid?
       @prospect.save
-      redirect_to root_path
+      redirect_to thanks
     else
       render :new
     end
