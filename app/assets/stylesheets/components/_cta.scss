@@ -1,0 +1,14 @@
+.cta{
+  color: white;
+  background-color: rgba(234, 8, 8, 0.9);
+  padding: 20px 90px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+.cta:hover{
+  opacity: 1;
+  background-color: rgba(234, 8, 8, 0.95);
+  text-decoration: none;
+  color: white;
+}
