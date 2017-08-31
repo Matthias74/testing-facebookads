@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
-  get 'prospects/new'
 
-  get 'prospects/create'
+  resources :prospects, only: [:new, :create]
 
   devise_for :users
   root to: 'pages#home'

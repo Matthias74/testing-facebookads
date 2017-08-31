@@ -1,2 +1,8 @@
 <h1>Prospects#new</h1>
 <p>Find me in app/views/prospects/new.html.erb</p>
+
+<%= simple_form_for (@prospect) do |f| %>
+  <%= f.input :email,label: false, placeholder: "Email" %>
+  <%= f.submit 'merci', class: 'btn btn-primary'%>
+<%end%>
+
