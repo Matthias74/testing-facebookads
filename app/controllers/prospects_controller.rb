@@ -9,14 +9,14 @@ class ProspectsController < ApplicationController
     @prospect = Prospect.new(prospect_params)
     if @prospect.valid?
       @prospect.save
-      redirect_to show
+      redirect_to prospect_path(@prospect)
     else
       render :new
     end
   end
 
   def show
-    @prospect = Prospect.last
+    @prospect = Prospect.find(params[:id])
   end
 
   private
