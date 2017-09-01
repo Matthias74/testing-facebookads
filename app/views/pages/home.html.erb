@@ -8,6 +8,7 @@
 </div>
 
 <script>
+    mixpanel.identify();
   $(".cta").click(function(){
     mixpanel.track("CTA Clicked");
   })
