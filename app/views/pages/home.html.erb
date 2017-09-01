@@ -6,3 +6,9 @@
       <%= link_to "Commander", new_prospect_path, class: "cta" %>
   </div>
 </div>
+
+<script>
+  $(".cta").click(function(){
+    mixpanel.track("CTA Clicked");
+  })
+</script>
