@@ -17,6 +17,9 @@ class ProspectsController < ApplicationController
 
   def show
     @prospect = Prospect.find(params[:id])
+    tracker do |t|
+      t.facebook_pixel :track, { type: 'CompleteRegistration', options: { value: 25, currency: 'USD' } }
+    end
   end
 
   private
