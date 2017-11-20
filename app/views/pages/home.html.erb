@@ -1,14 +1,20 @@
 <div class="banner">
-  <div class="banner-content">
-      <h1>Les bons produits de Fanfoué</h1>
-      <p>Saucissons et tommes bio de Haute-Savoie livrés chez vous</p>
-      <!-- <a href= "/prospects/new.html", class='cta'>Commander</a> -->
-      <%= link_to "Commander", new_prospect_path, class: "cta" %>
+  <div class="container">
+    <div class="row">
+
+      <div class='col-md-6'>
+        <script type='text/javascript' src='https://app.botsociety.io/js/lib/embedsoc.js'></script>
+        <a class='botsocref' style='position:fixed;left:-30000px;' href='https://botsociety.io'>chatbot</a>
+        <a class='botsoc' rel='nofollow' href='https://app.botsociety.io/emb/5a13001e430e070c00d546cc?p=3d7644e0899f911b41327d00e94c8a50888fd7c2' target='medium'></a>
+      </div>
+
+      <div class="banner-content col-md-6">
+          <h1 class='text-left'>Trouvez facilement les articles qui vous plaisent dans les séries TV.</h1>
+          <p class='text-justify'>Nous contruisons actuellement Lefouineur, un personnal shopper qui va vous aider à trouver les acticles qui vous plaisent dans la séries TV. Afin d'être tenu informé de sa sortie, laissez nous votre email.</p>
+          <!-- <a href= "/prospects/new.html", class='cta'>Commander</a> -->
+          <%= link_to "Commander", new_prospect_path, class: "cta" %>
+      </div>
+
+    </div>
   </div>
 </div>
-
-  <!-- <script>
-    $(".cta").click(function(){
-      mixpanel.track("CTA Clicked");
-    })
-  </script> -->
