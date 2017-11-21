@@ -17,6 +17,7 @@ gem 'sass-rails'
 gem 'simple_form'
 gem 'uglifier'
 gem 'rack-tracker'
+gem 'social-share-button'
 
 group :development, :test do
   gem 'pry-byebug'

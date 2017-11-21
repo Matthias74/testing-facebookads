@@ -6,6 +6,6 @@ class PagesController < ApplicationController
   end
 
   def thanks
-    #code
+    @root = root_path
   end
 end
