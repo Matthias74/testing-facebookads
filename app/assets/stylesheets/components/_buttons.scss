@@ -1,30 +1,20 @@
 .cta{
-  color: #425FB4;
+  color: #0077FF;
   background-color: white;
-  padding: 10px 35px;
-  border-radius: 5px;
-  font-weight: bold;
+  border: 1px solid rgba(0, 0, 0, .12);
+  padding: 0px 30px;
+  border-radius: 3px;
+  height: 50px;
 }
 
 .cta:hover{
   opacity: 1;
-  background-color: rgba(234, 8, 8, 0.95);
+  background-color: #ffffffc7;
   text-decoration: none;
-  color: white;
+  color: #0077FF;
 }
 
-.form-button {
-  width: 100px;
-	background: white;
-	font-weight: bold;
-	color: #425FB4;
-	border: 0 none;
-	border-radius: 2px;
-	cursor: pointer;
-	padding: 10px 5px;
-	margin: 10px 5px;
-  font-weight: normal;
-}
+
 
 .form-button:hover{
   color: white;

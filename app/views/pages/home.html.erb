@@ -1,8 +1,8 @@
 <div class="banner">
   <div class="container">
-    <div class="row">
+    <div class="row margin-bottom-row">
 
-      <div class='col-md-6'>
+      <div class='col-md-6 hidden-xs'>
         <script type='text/javascript' src='https://app.botsociety.io/js/lib/embedsoc.js'></script>
         <a class='botsocref' style='position:fixed;left:-30000px;' href='https://botsociety.io'>chatbot</a>
         <a class='botsoc' rel='nofollow' href='https://app.botsociety.io/emb/5a13001e430e070c00d546cc?p=3d7644e0899f911b41327d00e94c8a50888fd7c2' target='medium'></a>
@@ -10,11 +10,130 @@
 
       <div class="banner-content col-md-6">
           <h1 class='text-left'>Trouvez facilement les articles qui vous plaisent dans les séries TV.</h1>
-          <p class='text-justify'>Nous contruisons actuellement Lefouineur, un personnal shopper qui va vous aider à trouver les acticles qui vous plaisent dans la séries TV. Afin d'être tenu informé de sa sortie, laissez nous votre email.</p>
+          <p class='text-justify'>Nous contruisons actuellement Lefouineur, un assistant personnel qui va vous aider à trouver les acticles qui vous plaisent dans les séries TV. Afin d'être tenu informé de sa sortie, laissez-nous votre email.</p>
           <!-- <a href= "/prospects/new.html", class='cta'>Commander</a> -->
-          <%= link_to "Commander", new_prospect_path, class: "cta" %>
+          <%= simple_form_for (@prospect), :class => 'form-horizontal', wrapper: :horizontal_form do |f| %>
+            <%= f.input :email, label: false, placeholder: "mon@email.com" %>
+            <%= f.button :submit,"Envoyer", class: 'cta'%>
+          <%end%>
+
       </div>
 
     </div>
+  </div>
+</div>
+
+<div class="how-it-works">
+  <div class="container">
+    <h1 class="text-center margin-bottom-40">Comment ça marche ?</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="text-center margin-bottom-40">
+          <%= image_tag "camera.png" %>
+          <h2>Photographiez la scène où apparaît le produit</h2>
+        </div>
+        <p class='text-justify margin-bottom-40'>Seul votre smartphone suffit, ça tombe bien: il est à portée de main</p>
+      </div>
+      <div class="col-md-4">
+        <div class="text-center margin-bottom-40">
+          <%= image_tag "send.png" %>
+          <h2>Envoyez la photo avec le nom, la saison et le numéro d'épisode</h2>
+        </div>
+        <p class='text-justify margin-bottom-40'>Plus besoin d'arrêter votre épisode pour aller chercher le produit sur internet</p>
+      </div>
+      <div class="col-md-4">
+        <div class="text-center margin-bottom-40">
+          <%= image_tag "inbox.png" %>
+          <h2>Reçevez la référence du produit recherché</h2>
+        </div>
+        <p class='text-justify margin-bottom-40'>Nous vous envoyons la référence et le lien pour acheter le produit exact ou map qui vous plaît</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="map margin-top-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 map-content-photo">
+        <%= image_tag "work.png" %>
+      </div>
+      <div class="col-md-6 map-content">
+        <div class="map-content-text">
+          <h1>Demandez le produit qui vous plaît</h1>
+          <p>Lorsque le produit est identifié, Lefouineur vous envoie sa référence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="similaire margin-top-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 similaire-content">
+        <div class="similaire-content-text">
+          <h1>Trouvez les produits exacts et similaires</h1>
+          <p>Lorsque produit exact n'est pas dans votre budget ou qu'il n'est plus disponible, Lefouineur propose des produits similaires</p>
+        </div>
+      </div>
+      <div class="col-md-6 similaire-content-photo">
+        <%= image_tag "similaire.png" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="map margin-top-40">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-xs-12 map-content-photo">
+        <%= image_tag "map.png" %>
+      </div>
+      <div class="col-md-6  col-xs-12 map-content">
+        <div class="map-content-text">
+          <h1>Trouvez où acheter le produit à coté de chez vous</h1>
+          <p>Lorsque produit est trouvé, Lefouineur vous dit où le trouver dans votre quartier</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="how-it-works">
+  <div class="container">
+    <h1 class="text-center margin-bottom-40">Ce qu'on pense de nous</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="text-center margin-bottom-40">
+
+        </div>
+        <p class='text-justify margin-bottom-40'>"Je trouve enfin les vêtements et articles qui me plaisent dans les séries, chercher sur internet était un réel frein pour moi."<p>
+          <h4>Marion, 32 ans</h4>
+      </div>
+      <div class="col-md-4">
+        <div class="text-center margin-bottom-40">
+
+        </div>
+        <p class='text-justify margin-bottom-40'>"C'est super de pouvoir trouver des articles similaires, je peux me faire plaisir avec mon budget !"</p>
+        <h4>Charles, 28 ans</h4>
+      </div>
+      <div class="col-md-4">
+        <div class="text-center margin-bottom-40">
+        </div>
+
+        <p class='text-justify margin-bottom-40'>"Acheter des jolies pièces est devenu simple et amusant, en plus je fais plaisir à mes enfants en leur achetant les vêtements de leurs personnages préférés"</p>
+        <h4>Caroline, 37 ans</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-bottom">
+  <div class="cta-bottom-content">
+    <%= simple_form_for (@prospect), :class => 'form-horizontal', wrapper: :horizontal_form do |f| %>
+      <%= f.input :email, label: false, placeholder: "mon@email.com" %>
+      <%= f.button :submit,"Envoyer", class: 'cta'%>
+    <%end%>
   </div>
 </div>

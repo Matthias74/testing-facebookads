@@ -9,7 +9,7 @@ class ProspectsController < ApplicationController
     @prospect = Prospect.new(prospect_params)
     if @prospect.valid?
       @prospect.save
-      redirect_to prospect_path(@prospect)
+      redirect_to thanks_path
     else
       render :new
     end
