@@ -8,6 +8,6 @@ class ProspectMailer < ApplicationMailer
   def welcome(prospect)
     @prospect = prospect
 
-    mail to: @prospect.email, Subject: "Bienvenue"
+    mail to: @prospect.email, Subject: "Bienvenue!"
   end
 end

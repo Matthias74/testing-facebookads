@@ -11,7 +11,8 @@ class ProspectsController < ApplicationController
       @prospect.save
       redirect_to thanks_path
     else
-      render :new
+      flash[:notice] = @prospect.errors[:email].first
+      redirect_to root_path
     end
   end
 
