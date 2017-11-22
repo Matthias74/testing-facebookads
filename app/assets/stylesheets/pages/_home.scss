@@ -102,3 +102,8 @@ h2{
 .cta-bottom-content{
   width: 520px;
 }
+
+.inactiveLink {
+   pointer-events: none;
+   cursor: default;
+}
