@@ -7,7 +7,11 @@ class ProspectMailer < ApplicationMailer
   #
   def welcome(prospect)
     @prospect = prospect
+    mail to: @prospect.email, Subject: "Bienvenue!"
+  end
 
-    mail to: @prospect.email, bcc:"vittematthias@gmail.com", Subject: "Bienvenue!"
+  def new_subscriber(prospect)
+    @prospect = prospect
+    mail to: 'vittematthias@gmail.com', subject: "Un nouveau propsect s'est inscrit sur la LP"
   end
 end
